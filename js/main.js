@@ -43,7 +43,7 @@ function changeColor(someColor) {
 
 function loadInfo(someGift) {
 	nameLabel.innerText = someGift.name
-	// modalDescription.innerText = gift.description
+	modalDescription.innerText = gift.description
 	modalTitle.innerText = someGift.name
 }
 
@@ -51,4 +51,8 @@ function share() {
 	const a = document.createElement('a')
 	a.href = `whatsapp://send?text=A mi me tocó el don de ${gift.name}! Fijate cual te toca a vos! pastoralcopello.github.io/pentecostes`
 	a.click()
+}
+
+function scratchEnded() {
+
 }
