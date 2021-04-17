@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+	.nameLabel {
+		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.nameLabel {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.nameLabel {
+		font-size: 35px;
+	}
+}

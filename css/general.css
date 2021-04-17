@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	background-color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fuego {
+	width: 200px;
+}
+
+.hidden {
+	display: none;
+}
+
+.btn-primary {
+	background: var(--gift-color);
+	border-color: white;
+	color: white;
+}
+
+.btn-primary:hover {
+	background: white;
+	border-color: var(--gift-color);
+	color: var(--gift-color);
+}
