@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/splash.css">
     <link rel="stylesheet" href="css/answer.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/scratchcard.css">
   
   
     <!-- ROBOTS -->
@@ -68,17 +69,25 @@
         <div></div>
     </section>
 
-    <section class="answer hidden">
-        <h3 class="nameLabel">Gift</h3>
-        <div class="answer-buttons">
-            <button type="button" class="btn btn-primary btn-answer btn-more-info" data-bs-toggle="modal" data-bs-target="#descriptionModal">¿Qué es este don?</button>
-            <button type="button" class="btn btn-primary btn-answer btn-answer-share" onclick="share()">Compartir</button>
+    <section class="answer display-none">
+            <div class="raspa-cont"><h3 class="raspa">¡Raspá!</h3></div>
+            <div class="sc__wrapper">
+                <div id="js--sc--container" class="sc__container scratch-border">
+                </div>
+                <div class="sc__infos">0% / 30%</div>
+            </div>
+            <div class="answer-buttons visibility-hidden">
+                <button type="button" class="btn btn-primary btn-answer btn-more-info" data-bs-toggle="modal" data-bs-target="#descriptionModal">¿Qué es este don?</button>
+                <button type="button" class="btn btn-primary btn-answer btn-answer-share" onclick="share()">Compartir</button>
+            </div>
         </div>
+        </div>
+        
     </section>
 
     <!-- Modal -->
     <div class="modal fade" id="descriptionModal" tabindex="-1" aria-labelledby="descriptionModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="descriptionModalLabel">Gift Name</h5>
@@ -104,4 +113,6 @@
 
 <script src="js/gifts.js"></script>
 <script src="js/main.js"></script>
+<script src="js/scratchcard.min.js"></script>
+<script src="js/myscratchcard.js"></script>
 </html>

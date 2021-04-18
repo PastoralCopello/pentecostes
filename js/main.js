@@ -5,7 +5,7 @@ const nameLabel = document.querySelector('.nameLabel')
 const modalTitle = document.querySelector('.modal-title')
 const modalDescription = document.querySelector('.modal-description')
 let loading = false
-let gift = null
+
 
 function start() {
 	if (!loading) {
@@ -18,7 +18,6 @@ function start() {
 }
 
 function getGift() {
-	gift = randomGift()
 	changeColor(gift.color)
 	loadInfo(gift)
 	hide(splash)
@@ -26,14 +25,14 @@ function getGift() {
 }
 
 function hide(element) {
-	if (!element.className.includes('hidden')) {
-		element.classList.add('hidden')
+	if (!element.className.includes('display-none')) {
+		element.classList.add('display-none')
 	}
 }
 
 function show(element) {
-	if (element.className.includes('hidden')) {
-		element.classList.remove('hidden')
+	if (element.className.includes('display-none')) {
+		element.classList.remove('display-none')
 	}
 }
 
@@ -42,8 +41,8 @@ function changeColor(someColor) {
 }
 
 function loadInfo(someGift) {
-	nameLabel.innerText = someGift.name
-	modalDescription.innerText = gift.description
+	// nameLabel.innerText = someGift.name
+	modalDescription.innerText = someGift.description
 	modalTitle.innerText = someGift.name
 }
 
@@ -53,6 +52,6 @@ function share() {
 	a.click()
 }
 
-function scratchEnded() {
-
+function scratchCompleted() {
+	document.documentElement.style.setProperty('--answer-color', gift.color)
 }

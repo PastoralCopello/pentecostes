@@ -1,5 +1,5 @@
 .answer {
-	background: var(--gift-color);
+	background: var(--answer-color);
 }
 
 .answer-buttons {
@@ -10,9 +10,8 @@
 }
 
 .nameLabel {
-	color: white;
 	font-weight: 800;
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
 	padding: 20px;
 	margin: 150px 20px;
@@ -22,7 +21,6 @@
 	background: none;
 	font-weight: 600;
 	border: 2px solid white;
-	color: white;
 	margin: 10px;
 }
 

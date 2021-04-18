@@ -1,3 +1,8 @@
+:root {
+	--answer-color: black;
+  }
+
+
 body {
 	margin: 0;
 	background-color: black;
@@ -10,20 +15,20 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: white;
 }
 
-.fuego {
-	width: 200px;
-}
-
-.hidden {
+.display-none {
 	display: none;
+}
+
+.visibility-hidden {
+	visibility: hidden;
 }
 
 .btn-primary {
 	background: var(--gift-color);
 	border-color: white;
-	color: white;
 }
 
 .btn-primary:hover {
