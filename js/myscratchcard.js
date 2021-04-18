@@ -13,8 +13,6 @@ const sc = new ScratchCard('#js--sc--container', {
   nPoints: 30,
   pointSize: 4,
   callback: function () {
-    // alert('Now the window will reload !')
-    // window.location.reload()
     scratchCompleted()
     scContainer.classList.remove('scratch-border')
     scInfos.classList.add('visibility-hidden')
@@ -22,6 +20,10 @@ const sc = new ScratchCard('#js--sc--container', {
     document.querySelector('.raspa').classList.add('visibility-hidden')
   }
 })
+
+const scCanvas = document.querySelector('.sc__canvas')
+
+document.querySelector('.sc__container').style.height = `${scCanvas.getBoundingClientRect().height}px`
 
 // Init
 sc.init().then(() => {

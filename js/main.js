@@ -6,7 +6,6 @@ const modalTitle = document.querySelector('.modal-title')
 const modalDescription = document.querySelector('.modal-description')
 let loading = false
 
-
 function start() {
 	if (!loading) {
 		loading = true
@@ -22,6 +21,8 @@ function getGift() {
 	loadInfo(gift)
 	hide(splash)
 	show(answer)
+	document.querySelector('.sc__container').style.height = `${scCanvas.getBoundingClientRect().height}px`
+
 }
 
 function hide(element) {
