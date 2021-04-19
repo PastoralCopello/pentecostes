@@ -23,8 +23,6 @@ const sc = new ScratchCard('#js--sc--container', {
 
 const scCanvas = document.querySelector('.sc__canvas')
 
-document.querySelector('.sc__container').style.height = `${scCanvas.getBoundingClientRect().height}px`
-
 // Init
 sc.init().then(() => {
   sc.canvas.addEventListener('scratch.move', () => {
