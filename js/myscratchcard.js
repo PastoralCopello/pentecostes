@@ -27,7 +27,7 @@ const scCanvas = document.querySelector('.sc__canvas')
 sc.init().then(() => {
   sc.canvas.addEventListener('scratch.move', () => {
     let percent = sc.getPercent().toFixed(0);
-    scInfos.innerHTML = percent + '% / 30%';
+    scInfos.innerHTML = percent * 4 + '% / 100%';
     console.log(percent)
   })
 }).catch((error) => {
