@@ -1,9 +1,9 @@
-const fire = document.querySelector('.fuego')
-const splash = document.querySelector('.splash')
-const answer = document.querySelector('.answer')
-const nameLabel = document.querySelector('.nameLabel')
-const modalTitle = document.querySelector('.modal-title')
-const modalDescription = document.querySelector('.modal-description')
+const fire = $('.fuego')
+const splash = $('.splash')
+const answer = $('.answer')
+const nameLabel = $('.nameLabel')
+const modalTitle = $('.modal-title')
+const modalDescription = $('.modal-description')
 let loading = false
 
 function start() {
@@ -17,24 +17,13 @@ function start() {
 }
 
 function getGift() {
-	changeColor(gift.color)
-	loadInfo(gift)
+	changeColor(myGift.color)
+	loadInfo(myGift)
 	hide(splash)
 	show(answer)
-	document.querySelector('.sc__container').style.height = `${scCanvas.getBoundingClientRect().height}px`
-
-}
-
-function hide(element) {
-	if (!element.className.includes('display-none')) {
-		element.classList.add('display-none')
-	}
-}
-
-function show(element) {
-	if (element.className.includes('display-none')) {
-		element.classList.remove('display-none')
-	}
+	$('.sc__container').style.height = `${
+		scCanvas.getBoundingClientRect().height
+	}px`
 }
 
 function changeColor(someColor) {
@@ -49,10 +38,11 @@ function loadInfo(someGift) {
 
 function share() {
 	const a = document.createElement('a')
-	a.href = `whatsapp://send?text=A mi me tocó el don de ${gift.name}! Fijate cual te toca a vos! pastoralcopello.github.io/pentecostes`
+	a.href = `whatsapp://send?text=A mi me tocó el don de ${myGift.name}! Fijate cual te toca a vos! pastoralcopello.github.io/pentecostes`
 	a.click()
 }
 
 function scratchCompleted() {
-	document.documentElement.style.setProperty('--answer-color', gift.color)
+	document.documentElement.style.setProperty('--answer-color', myGift.color)
+	localStorage.scratchedGift = true
 }
