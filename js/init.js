@@ -6,6 +6,7 @@ if (localStorage.myGift) {
 	// newGift = false
 	const giftName = localStorage.myGift
 	myGift = giftByName(giftName)
+	document.documentElement.style.setProperty('--midon-color', myGift.color)
 } else {
 	// newGift = true
 	myGift = randomGift()
@@ -13,9 +14,5 @@ if (localStorage.myGift) {
 }
 
 if (!localStorage.receivedGifts) {
-	saveReceivedGifts([])
+	saveReceivedGifts([myGift.name])
 }
-
-// if (!newGift) {
-// 	$('.raspa').innerText = '¡Ya tenés tu don!'
-// }

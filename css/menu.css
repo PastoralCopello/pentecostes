@@ -1,0 +1,29 @@
+body {
+	color: white;
+}
+
+.title {
+	position: fixed;
+	top: 100px;
+}
+
+nav {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.btn-menu {
+	margin: 20px;
+	padding: 12px 30px;
+	/* background: var(--midon-color); */
+	font-weight: 600;
+	border: 3px solid white;
+	font-size: 25px;
+}
+
+.btn-menu-share {
+	background: none;
+}

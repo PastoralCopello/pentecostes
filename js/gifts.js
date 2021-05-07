@@ -9,6 +9,14 @@ class Gift {
 	hasCode(code) {
 		this.codes.includes(code)
 	}
+
+	li() {
+		const li = document.createElement('li')
+		li.classList.add('li-dones')
+		li.innerText = this.name
+		li.style.background = this.color
+		return li
+	}
 }
 
 const consejo = new Gift(

@@ -2,12 +2,12 @@ const scContainer = document.getElementById('js--sc--container')
 const scInfos = document.querySelector('.sc__infos')
 const sc = new ScratchCard('#js--sc--container', {
 	scratchType: SCRATCH_TYPE.SPRAY,
-	// containerWidth: scContainer.offsetWidth,
-	containerWidth: 500,
+	containerWidth: scContainer.offsetWidth,
+	// containerWidth: 500,
 	containerHeight: 300,
 	brushSrc: '',
 	imageForwardSrc:
-		'https://masth0.github.io/ScratchCard/images/scratchcard.jpg',
+		'https://masth0.github.io/ScratchCard//images/scratchcard.jpg',
 	imageBackgroundSrc: '',
 	htmlBackground: `<div class="inner_html"><h3 class="nameLabel">${myGift.name}</h3></div>`,
 	clearZoneRadius: 50,
@@ -18,7 +18,7 @@ const sc = new ScratchCard('#js--sc--container', {
 		scContainer.classList.remove('scratch-border')
 		scInfos.classList.add('visibility-hidden')
 		document
-			.querySelector('.answer-buttons')
+			.querySelector('.midon-buttons')
 			.classList.remove('visibility-hidden')
 		document.querySelector('.raspa').classList.add('visibility-hidden')
 	},
