@@ -5,7 +5,7 @@ let loading = false
 function start() {
 	if (!loading) {
 		loading = true
-		fire.src = '../images/fire.gif'
+		fire.src = '/images/fire.gif'
 		setTimeout(() => {
 			if (localStorage.scratchedGift) {
 				window.location = `${root}/menu`
