@@ -11,6 +11,8 @@ if (receivedGift == myGift.name) {
 	alert(`Te compartieron el don de ${receivedGift}!`)
 }
 
+window.location = `${root}/dones`
+
 function receivedGiftName() {
 	const querystring = window.location.search
 	const params = new URLSearchParams(querystring)

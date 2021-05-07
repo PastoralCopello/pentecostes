@@ -17,6 +17,10 @@ class Gift {
 		li.style.background = this.color
 		return li
 	}
+
+	randomCode() {
+		return this.codes[Math.floor(Math.random() * 4)]
+	}
 }
 
 const consejo = new Gift(

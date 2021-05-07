@@ -25,6 +25,14 @@ function chequearScratchedGift() {
 
 function share() {
 	const a = document.createElement('a')
-	a.href = `whatsapp://send?text=Te comparto mi don de ${myGift.name}! Fijate cual te toca a vos! pastoralcopello.github.io/pentecostes`
+	const code = myGift.randomCode()
+	const url = `${root}/receive/?code=${code}`
+	a.href = `whatsapp://send?text=Te comparto mi don de ${myGift.name}! Abrí el click para recibir tu regalo y descubrir tu don! ${url}`
 	a.click()
 }
+
+// function share() {
+// 	const a = document.createElement('a')
+// 	a.href = `whatsapp://send?text=Te comparto mi don de ${myGift.name}! Fijate cual te toca a vos! pastoralcopello.github.io/pentecostes`
+// 	a.click()
+// }
