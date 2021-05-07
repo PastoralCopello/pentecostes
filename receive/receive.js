@@ -1,4 +1,5 @@
 const receivedGift = receivedGiftName()
+console.log(receivedGift)
 
 if (receivedGift == myGift.name) {
 	// is own gift
@@ -18,5 +19,6 @@ function receivedGiftName() {
 	const querystring = window.location.search
 	const params = new URLSearchParams(querystring)
 	const receivedGiftCode = params.get('code')
+	console.log(receivedGiftCode)
 	return giftNameByCode(receivedGiftCode)
 }
