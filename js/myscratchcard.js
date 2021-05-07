@@ -7,7 +7,7 @@ const sc = new ScratchCard('#js--sc--container', {
 	containerHeight: 300,
 	brushSrc: '',
 	imageForwardSrc:
-		'https://masth0.github.io/ScratchCard//images/scratchcard.jpg',
+		'https://masth0.github.io/ScratchCard/../images/scratchcard.jpg',
 	imageBackgroundSrc: '',
 	htmlBackground: `<div class="inner_html"><h3 class="nameLabel">${myGift.name}</h3></div>`,
 	clearZoneRadius: 50,
