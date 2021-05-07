@@ -9,6 +9,7 @@ if (receivedGift == myGift.name) {
 } else {
 	// haven't received gift yet
 	alert(`Te compartieron el don de ${receivedGift}!`)
+	addGift(receivedGift)
 }
 
 window.location = `${root}/dones`

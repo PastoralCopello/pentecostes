@@ -27,7 +27,7 @@ function share() {
 	const a = document.createElement('a')
 	const code = myGift.randomCode()
 	const url = `${root}/receive/?code=${code}`
-	a.href = `whatsapp://send?text=Te comparto mi don de ${myGift.name}! Abrí el click para recibir tu regalo y descubrir tu don! ${url}`
+	a.href = `whatsapp://send?text=Te comparto mi don de ${myGift.name}! Abrí el link para recibir tu regalo y descubrir tu don! ${url}`
 	a.click()
 }
 
