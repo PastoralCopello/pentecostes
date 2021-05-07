@@ -7,7 +7,7 @@ class Gift {
 	}
 
 	hasCode(code) {
-		this.codes.includes(code)
+		return this.codes.includes(code)
 	}
 
 	li() {
