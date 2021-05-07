@@ -85,7 +85,7 @@ function giftByName(name) {
 }
 
 function giftNameByCode(code) {
-	gifts.find((gift) => gift.hasCode(code))
+	return gifts.find((gift) => gift.hasCode(code))
 }
 
 function receivedGifts() {
