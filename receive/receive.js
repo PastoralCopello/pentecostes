@@ -3,7 +3,7 @@ console.log(receivedGift)
 
 if (receivedGift == myGift.name) {
 	// is own gift
-	alert('Te compartieron tu propio don!')
+	alert(`Te compartieron tu propio don! El don de ${receivedGift}`)
 } else if (hasGift(receivedGift)) {
 	// have already received gift
 	alert(`Ya te compartieron este don antes! Es el don de ${receivedGift}`)

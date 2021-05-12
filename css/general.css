@@ -38,8 +38,37 @@ section {
 }
 
 .espiga {
-	width: 80px;
+	width: 60px;
 	position: fixed;
-	bottom: 40px;
-	left: 40px;
+	bottom: 30px;
+	left: 30px;
+}
+
+header {
+	/* width: 60px; */
+	position: fixed;
+	top: 30px;
+	left: 30px;
+}
+
+.back {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	text-decoration: none;
+}
+
+.back:hover {
+	font-weight: 900;
+	color: white;
+}
+
+.back i {
+	margin: 0 10px;
+}
+
+.back h4 {
+	margin: 0 10px;
 }
