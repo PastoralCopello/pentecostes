@@ -30,9 +30,3 @@ function share() {
 	a.href = `whatsapp://send?text=Te comparto mi don de ${myGift.name}! Abrí el link para recibir tu regalo y descubrir tu don! ${url}`
 	a.click()
 }
-
-// function share() {
-// 	const a = document.createElement('a')
-// 	a.href = `whatsapp://send?text=Te comparto mi don de ${myGift.name}! Fijate cual te toca a vos! pastoralcopello.github.io/pentecostes`
-// 	a.click()
-// }

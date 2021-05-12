@@ -2,6 +2,7 @@ const midon = $('.midon')
 const nameLabel = $('.nameLabel')
 const modalTitle = $('.modal-title')
 const modalDescription = $('.modal-description')
+
 loadInfo(myGift)
 
 function loadInfo(someGift) {

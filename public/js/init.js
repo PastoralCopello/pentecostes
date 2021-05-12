@@ -1,7 +1,4 @@
 let myGift = null
-// let receivedGifts = null
-// let newGift = null
-
 let lastVersion = '0.1'
 
 if (localStorage.version) {
