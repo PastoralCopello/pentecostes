@@ -12,11 +12,9 @@ if (localStorage.version) {
 }
 
 if (localStorage.myGift) {
-	// newGift = false
 	const giftName = localStorage.myGift
 	myGift = giftByName(giftName)
 } else {
-	// newGift = true
 	myGift = randomGift()
 	localStorage.myGift = myGift.name
 }

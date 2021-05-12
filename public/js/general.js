@@ -15,7 +15,8 @@ function show(element) {
 }
 
 // const root = 'http://127.0.0.1:5500'
-const root = 'http://pastoralcopello.github.io/pentecostes'
+// const root = 'https://pastoralcopello.github.io/pentecostes'
+const root = 'https://pentecostesmenesiano.web.app'
 
 function chequearScratchedGift() {
 	if (!localStorage.scratchedGift) {

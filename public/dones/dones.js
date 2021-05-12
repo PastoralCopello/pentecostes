@@ -34,7 +34,6 @@ ulDones.addEventListener('click', (e) => {
 
 function loadGifts() {
 	const giftsNames = receivedGifts()
-	// const giftsNames = ['Consejo', 'Sabiduría', 'Entendimiento']
 	const giftsAmount = giftsNames.length
 	giftCount.innerText = `${giftsAmount} / 7`
 
